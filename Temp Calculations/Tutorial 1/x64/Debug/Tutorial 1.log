@@ -1,0 +1,122 @@
+﻿Build started 06/06/2016 13:15:51.
+     1>Project "C:\Users\gabri\Documents\Uni\Gabrielle Watson 13420435 Parallel\Tutorial 1\Tutorial 1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Intel\OpenCL SDK\include" /Zi /nologo /W3 /WX- /Od /D __x86_64 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt "Tutorial 1.cpp"
+         Tutorial 1.cpp
+     1>Tutorial 1.cpp(81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>Tutorial 1.cpp(183): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+     1>Tutorial 1.cpp(208): warning C4244: 'initializing': conversion from 'size_t' to 'float', possible loss of data
+     1>Tutorial 1.cpp(213): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+     1>Tutorial 1.cpp(218): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+     1>Tutorial 1.cpp(226): warning C4244: 'initializing': conversion from 'size_t' to 'float', possible loss of data
+     1>Tutorial 1.cpp(232): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory0(657): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory0(775): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,float&>(_Objty *,float &)' being compiled
+                 with
+                 [
+                     _Ty=cl_int,
+                     _Objty=int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory0(775): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,float&>(_Objty *,float &)' being compiled
+                 with
+                 [
+                     _Ty=cl_int,
+                     _Objty=int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory0(920): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,float&>(std::allocator<_Ty> &,_Objty *,float &)' being compiled
+                 with
+                 [
+                     _Alloc=std::allocator<cl_int>,
+                     _Ty=int,
+                     _Objty=int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory0(920): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,float&>(std::allocator<_Ty> &,_Objty *,float &)' being compiled
+                 with
+                 [
+                     _Alloc=std::allocator<cl_int>,
+                     _Ty=int,
+                     _Objty=int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory(379): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<int,float&>(_Ty *,float &)' being compiled
+                 with
+                 [
+                     _Ty=cl_int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory(379): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<int,float&>(_Ty *,float &)' being compiled
+                 with
+                 [
+                     _Ty=cl_int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory(416): note: see reference to function template instantiation '_FwdIt std::_Uninit_copy<_InIt,_FwdIt,std::allocator<_Ty>>(_InIt,_InIt,_FwdIt,std::_Wrap_alloc<std::allocator<_Ty>> &,std::_Nonscalar_ptr_iterator_tag)' being compiled
+                 with
+                 [
+                     _FwdIt=int *,
+                     _InIt=float *,
+                     _Ty=cl_int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory(427): note: see reference to function template instantiation '_FwdIt std::_Uninit_copy<float*,_Iter,_Alloc>(_InIt,_InIt,_FwdIt,_Alloc &)' being compiled
+                 with
+                 [
+                     _FwdIt=int *,
+                     _Iter=int *,
+                     _Alloc=std::_Wrap_alloc<std::allocator<cl_int>>,
+                     _InIt=float *
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector(1672): note: see reference to function template instantiation '_FwdIt std::_Uninitialized_copy<_Iter,int*,std::_Wrap_alloc<std::allocator<_Ty>>>(_InIt,_InIt,_FwdIt,_Alloc &)' being compiled
+                 with
+                 [
+                     _FwdIt=int *,
+                     _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>,
+                     _Ty=cl_int,
+                     _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>,
+                     _Alloc=std::_Wrap_alloc<std::allocator<cl_int>>
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector(1436): note: see reference to function template instantiation 'int *std::vector<cl_int,std::allocator<_Ty>>::_Ucopy<_Iter>(_Iter,_Iter,int *)' being compiled
+                 with
+                 [
+                     _Ty=cl_int,
+                     _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector(1436): note: see reference to function template instantiation 'int *std::vector<cl_int,std::allocator<_Ty>>::_Ucopy<_Iter>(_Iter,_Iter,int *)' being compiled
+                 with
+                 [
+                     _Ty=cl_int,
+                     _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector(1373): note: see reference to function template instantiation 'void std::vector<cl_int,std::allocator<_Ty>>::_Insert<_Iter>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>,_Iter,_Iter,std::forward_iterator_tag)' being compiled
+                 with
+                 [
+                     _Ty=cl_int,
+                     _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector(1373): note: see reference to function template instantiation 'void std::vector<cl_int,std::allocator<_Ty>>::_Insert<_Iter>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>,_Iter,_Iter,std::forward_iterator_tag)' being compiled
+                 with
+                 [
+                     _Ty=cl_int,
+                     _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>
+                 ]
+         Tutorial 1.cpp(97): note: see reference to function template instantiation 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>> std::vector<cl_int,std::allocator<_Ty>>::insert<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>,_Iter,_Iter)' being compiled
+                 with
+                 [
+                     _Ty=cl_int,
+                     _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>
+                 ]
+         Tutorial 1.cpp(97): note: see reference to function template instantiation 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>> std::vector<cl_int,std::allocator<_Ty>>::insert<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>,_Iter,_Iter)' being compiled
+                 with
+                 [
+                     _Ty=cl_int,
+                     _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\gabri\Documents\Uni\Gabrielle Watson 13420435 Parallel\x64\Debug\Tutorial 1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\OpenCL SDK\lib\x64" OpenCL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\gabri\Documents\Uni\Gabrielle Watson 13420435 Parallel\x64\Debug\Tutorial 1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\gabri\Documents\Uni\Gabrielle Watson 13420435 Parallel\x64\Debug\Tutorial 1.lib" /MACHINE:X64 "x64\Debug\Tutorial 1.obj"
+         Tutorial 1.vcxproj -> C:\Users\gabri\Documents\Uni\Gabrielle Watson 13420435 Parallel\x64\Debug\Tutorial 1.exe
+       PostBuildEvent:
+         If exist "*.cl" copy "*.cl" "C:\Users\gabri\Documents\Uni\Gabrielle Watson 13420435 Parallel\x64\Debug\\"
+         :VCEnd
+         my_kernels.cl
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\gabri\Documents\Uni\Gabrielle Watson 13420435 Parallel\Tutorial 1\Tutorial 1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.02
